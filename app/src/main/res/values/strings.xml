@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BusinessCardApp</string>
+    <string name="name_of_the_owner">Pranjal Dutta</string>
+    <string name="position_of_the_owner">Android Developer</string>
+
+
+    <!--Contact Info-->
+    <string name="phone_number">+91 44444 66666</string>
+    <string name="social_media">"@mrdutta"</string>
+    <string name="e_mail">"mrdutta@gmail.com"</string>
+</resources>
