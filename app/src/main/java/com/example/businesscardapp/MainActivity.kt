@@ -23,6 +23,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
@@ -67,7 +68,6 @@ fun BusinessCardApp(modifier: Modifier = Modifier) {
             )
 
         ContactInfo(
-            imageVector = Icons.Default.Email,
             email = stringResource(R.string.e_mail),
             phoneNumber = stringResource(R.string.phone_number),
             socialMedia = stringResource(R.string.social_media)
@@ -107,7 +107,6 @@ fun LogoNameAndTitle(
 
 @Composable
 fun ContactInfo(
-    imageVector: ImageVector,
     email: String,
     phoneNumber: String,
     socialMedia: String
@@ -121,9 +120,11 @@ fun ContactInfo(
 
             Icon(
                 /* It will take the material Icons */
-                imageVector = imageVector,
-                contentDescription = "Phone Icon",
-                Modifier.size(14.dp)
+                imageVector = Icons.Default.Email,
+                contentDescription = "e-mail Icon",
+                Modifier.size(14.dp),
+                                        /* tint for color of Icon // new */
+                tint = Color(0xFF00FF00)
             )
 
             Text(
@@ -142,7 +143,8 @@ fun ContactInfo(
                 /* It will take the material Icons */
                 imageVector = Icons.Default.Phone,
                 contentDescription = "Phone Icon",
-                Modifier.size(14.dp)
+                Modifier.size(14.dp),
+                tint = Color(0xFF00FF00)
             )
 
             Text(
@@ -160,8 +162,9 @@ fun ContactInfo(
             Icon(
                 /* It will take the material Icons */
                 imageVector = Icons.Default.Face,
-                contentDescription = "Phone Icon",
-                Modifier.size(14.dp)
+                contentDescription = "Social media Icon",
+                Modifier.size(14.dp),
+                tint = Color(0xFF00FF00)
             )
 
             Text(
