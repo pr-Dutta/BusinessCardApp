@@ -118,21 +118,21 @@ fun ContactInfo(
             verticalAlignment = Alignment.CenterVertically
         ) {
 
-            Icon(
-                /* It will take the material Icons */
-                imageVector = Icons.Default.Email,
-                contentDescription = "e-mail Icon",
-                Modifier.size(14.dp),
-                                        /* tint for color of Icon // new */
-                tint = Color(0xFF00FF00)
-            )
-
-            Text(
-                text = email,
-                fontSize = 14.sp,
-                modifier = Modifier
-                    .padding(16.dp)
-            )
+//            Icon(
+//                /* It will take the material Icons */
+//                imageVector = Icons.Default.Email,
+//                contentDescription = "e-mail Icon",
+//                Modifier.size(14.dp),
+//                                        /* tint for color of Icon // new */
+//                tint = Color(0xFF00FF00)
+//            )
+//
+//            Text(
+//                text = email,
+//                fontSize = 14.sp,
+//                modifier = Modifier
+//                    .padding(16.dp)
+//            )
         }
 
         Row(
